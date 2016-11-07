@@ -1,0 +1,14 @@
+boards:
+  'Configuration Management & Pipeline Automation':
+    id: 'alhujPoV'
+    lists:
+      'Estimate':
+        cardlimit: 10
+      'Ready':
+        cardlimit: 5
+      'Blocked':
+        cardlimit: 2
+      'Doing':
+        cardlimit: 5
+      'QA':
+        cardlimit: 5
