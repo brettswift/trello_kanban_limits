@@ -3,6 +3,7 @@ require 'yaml'
 require 'colorize'
 require 'trello'
 require 'envyable'
+require 'json'
 Envyable.load('config/env.yml')
 Envyable.load('config/app.yml')
 
@@ -11,6 +12,8 @@ task :default => ['kanban_limits']
 @config = {}
 def load_config()
   @config = YAML.load_file("config/app.yml")
+  puts "Configuration being used: "
+  puts JSON.pretty_generate(@config)
 end
 
 def initialize_config()
