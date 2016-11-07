@@ -1,0 +1,6 @@
+.bundle
+Gemfile.lock
+.ruby-version
+
+# Don't check in credentials 
+config/env.yml
